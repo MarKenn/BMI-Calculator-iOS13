@@ -55,6 +55,9 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.51797945209999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.49510380990000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="heightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hff-RO-9jz"/>
+                                        </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="gBl-1z-062">
                                         <rect key="frame" x="0.0" y="666" width="374" height="21"/>
@@ -83,6 +86,9 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.49890303940000003" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.50481592470000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="weightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="t4T-rK-p66"/>
+                                        </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AI-9r-7OW">
                                         <rect key="frame" x="0.0" y="767" width="374" height="51"/>
@@ -117,6 +123,12 @@
                             <constraint firstItem="I9w-aV-bwU" firstAttribute="trailing" secondItem="qUp-Sb-lWB" secondAttribute="trailing" id="gya-MZ-P7f"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightSlider" destination="QqB-i1-KxK" id="8GX-oL-qks"/>
+                        <outlet property="heightValueLabel" destination="onR-F4-ZbV" id="kaF-U9-tue"/>
+                        <outlet property="weightSlider" destination="JIH-Nr-5Rb" id="pMh-A0-B8W"/>
+                        <outlet property="weightValueLabel" destination="YIh-Wr-wDN" id="Xqu-3Q-hYr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
